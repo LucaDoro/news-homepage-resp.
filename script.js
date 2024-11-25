@@ -6,14 +6,18 @@ btnOpen = document.querySelector(".burger-menu__open");
 btnClose = document.querySelector(".burger-menu__close");
 
 btnOpen.addEventListener("click", function () {
-  navMenuModal.classList.remove("hidden");
-  navMenu.classList.add("hidden");
-  overlay.classList.remove("hidden");
+  navMenuModal.classList.add("show");
+  overlay.classList.add("show");
 });
+
 btnClose.addEventListener("click", function () {
-  navMenuModal.classList.add("hidden");
-  navMenu.classList.remove("hidden");
-  overlay.classList.add("hidden");
+  navMenuModal.classList.remove("show");
+  overlay.classList.remove("show");
+});
+
+overlay.addEventListener("click", function () {
+  navMenuModal.classList.remove("show");
+  overlay.classList.remove("show");
 });
 
 /*
