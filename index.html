@@ -51,31 +51,30 @@
       </nav>
     </header>
 
-    <main class="grid-template">
-      <section class="image-section">
+    <!-- Main content -->
+    <main class="main-content">
+      <section class="feature-section">
         <picture>
           <source
-            srcset="assets/images/image-web-3-desktop.jpg"
-            media="(min-width: 700px)"
+            srcset="assets/images/image-web-3-mobile.jpg"
+            media="(max-width: 700px)"
           />
           <img
             class="image"
-            src="assets/images/image-web-3-mobile.jpg"
-            alt=""
+            src="assets/images/image-web-3-desktop.jpg"
+            alt="Web 3.0 Feature Image"
           />
         </picture>
 
-        <section class="main-flex">
+        <div class="feature-text">
           <h1>The Bright Future of Web 3.0?</h1>
-          <div class="flex-button">
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
-            </p>
-            <button>Read more</button>
-          </div>
-        </section>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="read-more">Read more</button>
+        </div>
       </section>
 
       <section class="article-section">

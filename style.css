@@ -17,10 +17,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-:focus {
+/* :focus {
   outline: 2px solid blue;
   outline-offset: 2px;
-}
+} */
 
 img,
 picture,
@@ -118,6 +118,47 @@ body {
   color: var(--clr-primary-orange);
 }
 
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-text h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.feature-text p {
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  background-color: var(--clr-primary-red);
+  color: var(--clr-neutral-white);
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.read-more:hover {
+  background-color: var(--clr-neutral-blue-900);
+}
+
 .nav-menu__modal {
   position: fixed;
   z-index: 10;
@@ -185,32 +226,6 @@ body {
 picture > img {
   width: 100%;
   margin-bottom: 2rem;
-}
-
-.main-flex h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
-}
-
-.main-flex p {
-  margin-bottom: 1rem;
-}
-
-.main-flex button {
-  border: none;
-  background-color: var(--clr-primary-red);
-  color: var(--clr-neutral-white);
-  font-weight: bold;
-  padding: 1rem 2rem;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-bottom: 5rem;
-  cursor: pointer;
-}
-
-.main-flex button:hover {
-  background-color: var(--clr-neutral-blue-900);
 }
 
 .article-section {
@@ -318,7 +333,7 @@ picture > img {
     color: var(--clr-primary-orange);
   }
 
-  .burger-menu__open {
+  .menu-toggle {
     display: none;
   }
 
@@ -326,7 +341,7 @@ picture > img {
     display: none;
   }
 
-  .grid-template {
+  .main-content {
     display: grid;
     place-content: center;
     width: min(100%, 200rem);
@@ -336,17 +351,17 @@ picture > img {
     gap: 2rem;
   }
 
-  .main-flex {
+  .feature-text {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
   }
 
-  .main-flex h1 {
+  .feature-text h1 {
     max-width: 300px;
   }
 
-  .main-flex p {
+  .feature-text p {
     max-width: 350px;
   }
 
@@ -362,7 +377,7 @@ picture > img {
   }
 
   .article-section,
-  .image-section {
+  .feature-section {
     margin-bottom: 2rem;
   }
 
