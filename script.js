@@ -2,7 +2,7 @@ overlay = document.querySelector(".overlay");
 navMenuModal = document.querySelector(".nav-menu__modal");
 navMenu = document.querySelector(".nav-menu");
 
-btnOpen = document.querySelector(".burger-menu__open");
+btnOpen = document.querySelector(".menu-toggle");
 btnClose = document.querySelector(".burger-menu__close");
 
 btnOpen.addEventListener("click", function () {

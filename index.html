@@ -27,23 +27,27 @@
 
   <body>
     <div class="overlay"></div>
+
+    <!-- Header -->
     <header>
-      <nav class="nav-flex">
-        <img class="logo" src="assets/images/logo.svg" alt="W logo" />
-        <div class="nav-menu">
-          <ul class="nav-menu__list">
-            <p>Home</p>
-            <p>New</p>
-            <p>Popular</p>
-            <p>Trending</p>
-            <p>Categories</p>
-          </ul>
-        </div>
-        <img
-          class="burger-menu__open"
-          src="assets/images/icon-menu.svg"
-          alt=""
-        />
+      <nav class="navigation">
+        <a href="#" class="logo"
+          ><img src="assets/images/logo.svg" alt="Website logo" />
+        </a>
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popula</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+        <button class="menu-toggle">
+          <img
+            class="burger-menu__open"
+            src="assets/images/icon-menu.svg"
+            alt="Open menu"
+          />
+        </button>
       </nav>
     </header>
 
@@ -52,7 +56,7 @@
         <picture>
           <source
             srcset="assets/images/image-web-3-desktop.jpg"
-            media="(min-width: 900px)"
+            media="(min-width: 700px)"
           />
           <img
             class="image"
@@ -61,7 +65,7 @@
           />
         </picture>
 
-        <div class="main-flex">
+        <section class="main-flex">
           <h1>The Bright Future of Web 3.0?</h1>
           <div class="flex-button">
             <p>
@@ -71,7 +75,7 @@
             </p>
             <button>Read more</button>
           </div>
-        </div>
+        </section>
       </section>
 
       <section class="article-section">
@@ -99,32 +103,32 @@
       </section>
 
       <section class="grid-section">
-        <div class="section-flex-1">
+        <article class="section-item">
           <img src="assets/images/image-retro-pcs.jpg" alt="" />
           <div class="section-content">
             <h2>01</h2>
             <h4>Reviving Retro PCs</h4>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
-        </div>
+        </article>
 
-        <div class="section-flex-2">
+        <article class="section-item">
           <img src="assets/images/image-top-laptops.jpg" alt="" />
           <div class="section-content">
             <h2>02</h2>
             <h4>Top 10 Laptops of 2022</h4>
             <p>Our best picks for various needs and budgets.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="section-flex-3">
+        <article class="section-item">
           <img src="assets/images/image-gaming-growth.jpg" alt="" />
           <div class="section-content">
             <h2>03</h2>
             <h4>The Growth of Gaming</h4>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
-        </div>
+        </article>
 
         <div class="overlay"></div>
         <div class="nav-menu__modal">
