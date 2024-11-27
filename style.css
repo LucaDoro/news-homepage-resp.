@@ -138,13 +138,14 @@ body {
 .feature-text h1 {
   font-size: 2.5rem;
   font-weight: 900;
+  margin-bottom: 2rem;
 }
 
 .feature-text p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.read-more {
+.read-more-flex button {
   background-color: var(--clr-primary-red);
   color: var(--clr-neutral-white);
   padding: 1rem 2rem;
@@ -153,9 +154,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
+  margin-bottom: 2rem;
 }
 
-.read-more:hover {
+.read-more-flex button:hover {
   background-color: var(--clr-neutral-blue-900);
 }
 
@@ -179,8 +181,7 @@ body {
   margin-left: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 3rem;
   cursor: pointer;
 }
 .nav-menu__modal li:hover {
@@ -271,12 +272,12 @@ picture > img {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .highlight-item {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .highlight-item img {
@@ -285,26 +286,29 @@ picture > img {
   object-fit: cover;
 }
 
-.section-content {
+.highlight-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.section-content h2 {
+.highlight-text h2 {
   font-size: 2rem;
   font-weight: bold;
   color: var(--clr-neutral-blue-100);
 }
-.section-content h4 {
+
+.highlight-text h4 {
   font-weight: 900;
   font-size: 15px;
   cursor: pointer;
 }
-.section-content h4:hover {
+
+.highlight-text h4:hover {
   color: var(--clr-primary-orange);
 }
-.section-content p {
+
+.highlight-text p {
   color: var(--clr-neutral-blue-400);
   max-width: 600px;
 }
@@ -315,7 +319,6 @@ picture > img {
   }
 
   .navigation {
-    margin-top: 2rem;
     margin-bottom: 3rem;
   }
 
@@ -356,8 +359,7 @@ picture > img {
   .feature-text {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .feature-text h1 {
@@ -366,12 +368,6 @@ picture > img {
 
   .feature-text p {
     max-width: 350px;
-  }
-
-  .news-section {
-    width: 100%;
-    grid-column: 2;
-    margin-bottom: 0;
   }
 
   .highlights-section {
@@ -384,14 +380,38 @@ picture > img {
     margin-bottom: 2rem;
   }
 
-  .highlights-section img {
-    height: 120px;
-  }
-
   .highlight-item {
     display: flex;
     align-items: center;
     justify-items: space-between;
     gap: 2rem;
+  }
+
+  .highlight-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .highlight-text h2 {
+    font-size: 2rem;
+    color: var(--clr-neutral-blue-100);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .highlight-text h4 {
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .highlight-text h4:hover {
+    color: var(--clr-primary-orange);
+  }
+
+  .highlight-text p {
+    color: var(--clr-neutral-blue-400);
+    max-width: 600px;
   }
 }
