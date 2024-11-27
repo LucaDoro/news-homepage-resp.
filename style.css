@@ -325,7 +325,13 @@ picture > img {
     color: var(--clr-neutral-blue-400);
   }
 
-  .menu-list p:hover {
+  .menu-list a {
+    text-decoration: none;
+    color: var(--clr-neutral-blue-400);
+    font-size: 16px;
+  }
+
+  .menu-list a:hover {
     color: var(--clr-primary-orange);
   }
 
@@ -351,6 +357,7 @@ picture > img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
+    gap: 2rem;
   }
 
   .feature-text h1 {
