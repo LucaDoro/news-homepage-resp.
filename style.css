@@ -181,7 +181,7 @@ body {
   margin-left: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  font-size: 3rem;
+  font-size: 6vw;
   cursor: pointer;
 }
 .nav-menu__modal li:hover {
